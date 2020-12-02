@@ -1,0 +1,37 @@
+body{
+  background-color: teal;
+  padding: 10px;
+  border-right-style:double;
+  border-left-style:double;
+  border-top-style:double;
+  border-bottom-style:double;
+}
+.sisalto1 {
+  margin-top: 10px;
+  border:1px #ffffff solid;
+  padding: 20px;
+  border-radius: 20px
+}
+.yhteydenotto label{
+  display:block;
+}
+.yhteydenotto input[type="text"], .yhteydenotto textarea{
+  padding: 10px;
+  width: 100px;
+}
+.nappula{
+  background-color: #000000;
+  color:#ffffff;
+  text-decoration: underline;
+  padding: 10px;
+  border: none;
+}
+.nappula:hover{
+  background-color: #ff0000;
+  color:#ffffff;
+}
+.asemointi{
+  position: fixed;
+  top: 100px;
+  left: 0px;
+}
