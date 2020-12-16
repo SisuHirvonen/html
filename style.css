@@ -1,5 +1,5 @@
 body{
-  background-color: teal;
+  background-color:lightsteelblue ;
   padding: 10px;
   border-right-style:double;
   border-left-style:double;
@@ -11,13 +11,6 @@ body{
   border:1px #ffffff solid;
   padding: 20px;
   border-radius: 20px
-}
-.yhteydenotto label{
-  display:block;
-}
-.yhteydenotto input[type="text"], .yhteydenotto textarea{
-  padding: 10px;
-  width: 100px;
 }
 .nappula{
   background-color: #000000;
@@ -32,6 +25,6 @@ body{
 }
 .asemointi{
   position: fixed;
-  top: 100px;
+  top: 800px;
   left: 0px;
 }
