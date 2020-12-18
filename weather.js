@@ -20,13 +20,13 @@ var getJSON = function(url, callback) {
 };
 
 getJSON('https://func-weather.azurewebsites.net/api/HttpTriggerCSharp2?code=03Hf14xSawGyeGtfxZTCLJ5mGLx0GGusap2f3zssPqg6n3KriqizHg==&deviceId=1e0040001447393035313136&amount=10', function(err, data){
-  let taulukko = `<table width="20%" style="border=1px solid black">`;
+  let taulukko = `<table width="85%" align="center" style="border=1px solid black"><tr><td>Ilmankosteus</td><td>Lämpötila tuntuu</td><td>Lämpötila</td><td>Höyrystymispiste</td><td>Valoisuus</td></tr>`;
   const historia = data.map(function(mittaus){
 
     
-      taulukko = taulukko + `</td><td>${mittaus.Temp}</td><td>${mittaus.DP}</td><td>${mittaus.Light}</td></tr>`; 
+      taulukko = taulukko + `</td><td>${mittaus.Hum}</td><td>${mittaus.HI}</td><td>${mittaus.Temp}</td><td>${mittaus.DP}</td><td>${mittaus.Light}</td></tr>`; 
 
   });  
   taulukko = taulukko + `</table>`;
-  document.body.innerHTML = taulukko;
+  document.querySelector('.taulukko').innerHTML = taulukko;
 });

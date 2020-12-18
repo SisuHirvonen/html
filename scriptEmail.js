@@ -21,12 +21,13 @@ function sendJSON(){
   };
   const nimi = document.querySelector('#nimi').value;
   console.log("nimikentän sisältö: " + nimi);
+  const teksti = document.querySelector('#msg').value;
+  console.log("viestikentän sisältö: " + teksti);
   const email = document.querySelector('#email').value;
   console.log("sähköpostikentän sisältö: " + email);
   var data = JSON.stringify({
-    "EmailMsg": "Tähän tulee postin sisältö", //Kirjoittaa sisällön
-    "EmailAddress": email, //viestin kirjoittajan sähköposti
-    "EmailTo": "Sisu.Hirvonen@edu.salpaus.fi",
+    "EmailMsg": "Viestin lähettäjän sähköposti: " + email + ". Viestin sisältö: " + teksti, //Kirjoittaa sisällön
+    "EmailTo": "sisu.hirvonen",
     "EmailName": nimi
   });
   xhr.send(data);
