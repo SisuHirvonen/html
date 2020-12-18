@@ -1,5 +1,5 @@
 body{
-  background-color:lightsteelblue ;
+  background-color: #0cad8a ;
   padding: 10px;
   border-right-style:double;
   border-left-style:double;
@@ -7,6 +7,30 @@ body{
   border-bottom-style:double;
 }
 .sisalto1 {
+  margin-top: 10px;
+  border:1px #ffffff solid;
+  padding: 20px;
+  border-radius: 20px
+}
+.sisalto2 {
+  margin-top: 10px;
+  border:1px #ffffff solid;
+  padding: 20px;
+  border-radius: 20px
+}
+.sisalto3 {
+  margin-top: 10px;
+  border:1px #ffffff solid;
+  padding: 20px;
+  border-radius: 20px
+}
+.sisalto4 {
+  margin-top: 10px;
+  border:1px #ffffff solid;
+  padding: 20px;
+  border-radius: 20px
+}
+.sisalto5 {
   margin-top: 10px;
   border:1px #ffffff solid;
   padding: 20px;
@@ -20,11 +44,14 @@ body{
   border: none;
 }
 .nappula:hover{
-  background-color: #ff0000;
+  background-color: #5e1414;
   color:#ffffff;
 }
 .asemointi{
   position: fixed;
   top: 800px;
   left: 0px;
+}
+a:link{
+  color:#ffffff;
 }

@@ -23,7 +23,8 @@ getJSON('https://func-weather.azurewebsites.net/api/HttpTriggerCSharp2?code=03Hf
   let taulukko = `<table width="20%" style="border=1px solid black">`;
   const historia = data.map(function(mittaus){
 
-      taulukko = taulukko + `<tr><td>${mittaus.Hum}</td><td>${mittaus.Temp}</td><td>${mittaus.DP}</td><td>${mittaus.HI}</td><td>${mittaus.Light}</td></tr>`; 
+    
+      taulukko = taulukko + `</td><td>${mittaus.Temp}</td><td>${mittaus.DP}</td><td>${mittaus.Light}</td></tr>`; 
 
   });  
   taulukko = taulukko + `</table>`;

@@ -1,0 +1,37 @@
+body{
+  background-color:#5e1414;
+}
+.lomakealue label{
+  display: block;
+}
+.teksti input[type="text"], .teksti textarea{
+  padding: 10px;
+  box-sizing: 100px;
+  width: 200px;
+}
+.alue1{
+  width:20%;
+  margin:auto;
+}
+div {
+  background-color: green;
+  padding: 5px;
+  border-radius: 20px;
+}
+.lahetanappi{
+  background-color: #000000;
+  color:#ffffff;
+  padding: 10px;
+  border: none;
+}
+.lahetanappi:hover{
+  background-color: #036e31;
+  color:#ffffff;
+}
+.laatikko{
+  float: left;
+  width: 33,3%;
+  border: 2px solid black;
+  padding: 10px;
+  box-sizing: border-box;
+}
