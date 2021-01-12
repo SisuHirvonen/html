@@ -1,0 +1,67 @@
+ <html>
+  <head>
+    <!--Load the AJAX API-->
+    <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+    <script type="text/javascript">
+
+      // Load the Visualization API and the corechart package.
+      google.charts.load('current', {'packages':['corechart']});
+
+      // Set a callback to run when the Google Visualization API is loaded.
+      google.charts.setOnLoadCallback(drawChart);
+
+      // Callback that creates and populates a data table,
+      // instantiates the pie chart, passes in the data and
+      // draws it.
+      function drawChart() {
+
+        // Create the data table.
+        var data = new google.visualization.DataTable();
+        data.addColumn('string', 'Pvm');
+        data.addColumn('number', 'Asteet');
+        data.addRows([
+          ['1.1.2020', 22],
+          ['2.1.2020', 21],
+          ['3.1.2020', 25],
+          ['4.1.2020', 23],
+          ['5.1.2020', 22],
+        ]);
+
+        // Set chart options
+        var options = {'title':'lämpötila',
+                       'width':1200,
+                       'height':300};
+                       
+         // Create the data table.
+        var dataHum = new google.visualization.DataTable();
+        dataHum.addColumn('string', 'Pvm');
+        dataHum.addColumn('number', '%');
+        dataHum.addRows([
+          ['1.1.2020', 45],
+          ['2.1.2020', 40],
+          ['3.1.2020', 41],
+          ['4.1.2020', 39],
+          ['5.1.2020', 42],
+        ]);
+
+        // Set chart options
+        var optionsHum = {'title':'Ilmankosteus',
+                       'width':1200,
+                       'height':300};
+
+        // Instantiate and draw our chart, passing in some options.
+        var chart = new google.visualization.LineChart(document.getElementById('chartTemp_div'));
+        chart.draw(data, options);
+
+        var chartHum = new google.visualization.ColumnChart(document.getElementById('chartHum_div'));
+        chartHum.draw(dataHum, optionsHum);
+      }
+    </script>
+  </head>
+
+  <body>
+    <!--Div that will hold the pie chart-->
+    <div id="chartTemp_div"></div>
+    <div id="chartHum_div"></div>
+  </body>
+</html>
